@@ -221,148 +221,174 @@
     margin: 1.5vh 0;
 }
 
-.footer{
+.footer {
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
     padding: 6vh 8vw;
     text-align: center;
 }
 
-.footer h4{
+.footer h4 {
     font-size: 0.8em;
     font-weight: bold;
     color: #1d90c5;
     cursor: pointer;
-    border-radius: 0.10vw;
+    border-radius: 0.1vw;
     padding: 0.1vh 0.1vw;
 }
 
-
-.lenguageFooter{
+.lenguageFooter {
     display: flex;
     align-items: center;
     width: 10%;
 }
 
-.lenguageFooter a{
+.lenguageFooter a {
     text-decoration: none;
     color: #1d90c5;
     cursor: pointer;
 }
 
-.lenguageFooter i{
+.lenguageFooter i {
     color: #1d90c5;
-    cursor: pointer
+    cursor: pointer;
 }
 
-.socialFooter{
+.socialFooter {
     display: flex;
     gap: 0.7vw;
 }
 
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 947px) {
+    .menu i {
+        font-size: 1.2em;
+    }
+
+    .back,
+    .cart,
+    .lenguage a p {
+        font-size: 0.8em;
+    }
+
+    .lenguage img {
+        width: 20%;
+    }
+
+    .logo {
+        width: 80%;
+    }
+
+    .logo img {
+        width: 60%;
+    }
+
+    .trendAccessories {
+        padding: 8vh 5vw;
+        gap: 4vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trendAccessoriesDescrip {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+
+    .btnBuyAccessories {
+        margin: 0 0 5vh 0;
+        padding: 5% 15%;
+        font-size: 1.2em;
+    }
+
+    .trendAccessoriesImg {
+        width: 80%;
+        height: 20vh;
+        margin-bottom: 5vh;
+    }
+
+    .listTrendProduct {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .filters {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 8vh 5vw;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2vh;
+    }
+
+    .filters h1 {
+        font-size: 1em;
+        padding: 1.5vh 1vw;
+    }
+
+    .accessories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4vw;
+        margin: 0 5vw;
+    }
+
+    .containerProduct {
+        padding: 5vh 0;
+    }
+
+    .infoProduct h1 {
+        font-size: 1.2em;
+    }
+
+    .containerProduct h2 {
+        font-size: 1em;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        text-align: center;
+    }
+
+    .lenguageFooter {
+        width: -1%;
+    }
+}
 
 /* Estilos para pantallas pequeñas */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 567px) {
+    .head {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 4vh 12vw;
+    }
 
-.menu i {
-    font-size: 1.2em;
-}
+    .head, .lenguage{
+        font-size: 0.9em;
+        font-weight:lighter;
+    }
 
-.back a {
-    font-size: 0.8em;
-}
+    .menu, .back, .cart, .lenguage {
+        order: 2;
+    }
 
-.cart a {
-    font-size: 0.8em;
-}
+    .logo {
+        order: 1;
+        width: 100%;
+    }
 
-.cart p {
-    font-size: 0.8em;
-}
+    .filters {
+        margin: 4vh 10vw;
+        font-size: 0.8em;
+    }
 
-.lenguage a {
-    font-size: 0.8em;
-}
-
-.lenguage img {
-    width: 20%;
-}
-
-.logo {
-    width: 80%;
-}
-
-.logo img {
-    width: 60%;
-}
-
-.trendAccessories {
-    padding: 8vh 5vw;
-    gap: 4vw;
-    flex-direction: column;
-    align-items: center;
-}
-
-.trendAccessoriesDescrip {
-    width: 80%;
-    text-align: center;
-    margin-bottom: 5vh;
-}
-
-.btnBuyAccessories {
-    margin: 0 0 5vh 0;
-    padding: 5% 15%;
-    font-size: 1.2em;
-}
-
-.trendAccessoriesImg {
-    width: 80%;
-    height: 20vh;
-    margin-bottom: 5vh;
-}
-
-.listTrendProduct {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-}
-
-.filters {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 8vh 5vw;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2vh;
-}
-
-.filters h1 {
-    font-size: 1em;
-    padding: 1.5vh 1vw;
-}
-
-.accessories {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 4vw;
-    margin: 0 5vw;
-}
-
-.containerProduct {
-    padding: 5vh 0;
-}
-
-.infoProduct h1 {
-    font-size: 1.2em;
-}
-
-.containerProduct h2 {
-    font-size: 1em;
-}
-
-.footer{
-    flex-direction: column;
-    align-items: center;
-    gap: 2vh;
-}
+    .accessories {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4vw;
+        margin: 0 5vw;
+    }
 }
